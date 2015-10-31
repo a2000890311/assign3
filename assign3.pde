@@ -42,31 +42,31 @@ void draw() {
   image(HP, 4, 4);
  
     switch(round){
-    case 1: for(int i=0 , p = 0 ;i<5;i++,p+=70){   
+    case 1: for(int i=0 , p = 0 ;i<5;i++,p+=65){   
     image(enemy, x -p, y); 
      }
-     if(x ==880){
+     if(x ==890){
      round = 2;
      y=(int)random(130,300);
    }
      break;
  
- case 2: for(int i=0 , p = 0 ;i<5;i++,p+=70){   
+ case 2: for(int i=0 , p = 0 ;i<5;i++,p+=65){   
     image(enemy, x -p, y-p/2); 
      }
-     if(x == 880){
+     if(x == 890){
      round = 3;
      y=(int)random(170,270);
    }
      break;
      
-    case 3:for(int i=0 , p = 0 ;i<3;i++,p+=70){   
+    case 3:for(int i=0 , p = 0 ;i<3;i++,p+=65){   
     image(enemy,x-p,y-p);
     image(enemy,x-p,y+p);
-    image(enemy,x-p-140,y-p+140);
-    image(enemy,x-p-140,y+p-140);
+    image(enemy,x-p-130,y-p+130);
+    image(enemy,x-p-130,y+p-130);
      }       
-     if(x == 880){
+     if(x == 890){
      round = 1;
      y=(int)random(30,410);
    }    
